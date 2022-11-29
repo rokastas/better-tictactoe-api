@@ -1,18 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { plainToClass } from 'class-transformer';
 import { validate } from 'class-validator';
-import {
-  BaseResponse,
-  UpdateInfoRequest as UpdateInfoRequestInterface,
-} from './interfaces';
+import { UpdateInfoRequest as UpdateInfoRequestInterface } from './interfaces';
+import { BaseResponse } from '../interfaces';
 import { UpdateInfoRequest } from './models';
 
 @Injectable()
-export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
-
+export class InfoService {
   async validateInfo(
     rawData: UpdateInfoRequestInterface,
   ): Promise<BaseResponse> {

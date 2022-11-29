@@ -1,9 +1,5 @@
 import { ValidationError } from 'class-validator';
 
-export interface UpdateInfoRequest {
-  name: string;
-}
-
 interface BaseResponseInteface {
   success: boolean;
   data?: any;
