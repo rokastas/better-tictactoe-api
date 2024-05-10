@@ -43,6 +43,7 @@ export class UpdateInfoRequest implements UpdateInfoRequestInterface {
   @IsIn(['single', 'married', 'divorced', 'widowed'])
   maritalStatus: string;
 
+  @IsOptional()
   @IsDateString()
   @Validate(CoherentAgeValidator)
   dateOfBirth: string;
