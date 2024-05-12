@@ -22,6 +22,7 @@ export class CoherentAgeValidator implements ValidatorConstraintInterface {
     return calculatedAge === age;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   defaultMessage(args: ValidationArguments) {
     return `The date of birth is not coherent with the provided age.`;
   }
