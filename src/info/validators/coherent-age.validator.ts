@@ -1,3 +1,6 @@
+// Purpose: this validator checks if the date of birth
+// is coherent with the provided age.
+
 import {
   ValidatorConstraint,
   ValidatorConstraintInterface,
